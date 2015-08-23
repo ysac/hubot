@@ -1,5 +1,9 @@
 # README
 
+## memo
+
+* http://gihyo.jp/dev/serial/01/hubot
+
 ## todo
 
 * ansible環境設定ファイル
@@ -20,6 +24,8 @@ $ cat inventory
 default
 ```
 
+* vagrant環境情報をファイルに出力
+
 ```bash
 $ vagrant ssh-config > ssh.config
 ```
@@ -27,6 +33,8 @@ $ vagrant ssh-config > ssh.config
 * 実行
 
 ```bash
+$ vagrant up
+$ vagrant ssh-config > ssh.config
 $ ansible-playbook playbooks/rpm.yml
 ```
 
